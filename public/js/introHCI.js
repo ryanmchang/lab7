@@ -10,4 +10,9 @@ $(document).ready(function() {
  */
 function initializePage() {
 	// your code here
+	$(".likeBtn").click( handleClick );
+}
+
+function handleClick() {
+	ga("send", "event", "like", "click");
 }
